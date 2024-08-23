@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const SmsInstructions = () => {
+const Contact = () => {
   return (
     <div>
       <h2>SMS Instructions</h2>
@@ -9,4 +9,4 @@ const SmsInstructions = () => {
   );
 };
 
-export default SmsInstructions;
+export default Contact;

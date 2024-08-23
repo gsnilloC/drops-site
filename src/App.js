@@ -1,14 +1,16 @@
 // src/App.js
 
 import React from "react";
-import "./assets/App.css";
-import Instructions from "./components/landing.js";
+import "./assets/styles/App.css";
+import Landing from "./components/landing.js";
+import Navbar from "./components/navbar.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Instructions />
+        <Navbar />
+        <Landing />
       </header>
     </div>
   );
