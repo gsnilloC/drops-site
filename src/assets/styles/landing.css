@@ -1,33 +1,53 @@
-.centered-paragraph {
+/* Container for the header with typewriter and toggles */
+.header-container {
   text-align: center;
-  color: #ffffff; /* White text */
-  font-size: 36px; /* Larger font size */
-  font-weight: bold; /* Make text bold */
-  margin: 0 auto 20px auto; /* Center horizontally and add space below */
-  max-width: 70%; /* Restrict the width to 80% of the parent container */
-  line-height: 1.2; /* Improve readability */
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 
+/* Typewriter container with fixed height */
+.typewriter-container {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  max-width: 70%;
+  margin: 0 auto;
+  line-height: 1.2;
+  height: 90px; /* Fixed height to prevent layout shift */
+}
+
+.Typewriter__wrapper {
+  white-space: pre-wrap; /* Ensures the text wraps if needed */
+}
+
+.Typewriter__cursor {
+  display: inline;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+/* Toggle button styles */
 .toggle-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .toggle-option {
   padding: 10px 20px;
   cursor: pointer;
-  background-color: #4b0082; /* Default indigo background */
-  color: white; /* White text */
-  border: 1px solid #4b0082; /* Border matching the background */
+  background-color: #4b0082;
+  color: white;
+  border: 1px solid #4b0082;
   border-radius: 5px 5px 0 0;
   font-size: 18px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .toggle-option.active {
-  background-color: #61dafb; /* Lighter blue when active */
-  color: #4b0082; /* Indigo text when active */
+  background-color: #61dafb;
+  color: #4b0082;
 }
 
 .toggle-option:first-child {
@@ -42,38 +62,32 @@
   border-right: none;
 }
 
-/* src/assets/styles/landing.css */
+/* Container for logos */
 .logo-container {
-  position: relative;
-  width: 100%;
-  height: 250px; /* Adjust height to accommodate different logo positions */
-  margin-top: 20px; /* Adjust as needed */
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 0;
 }
 
 .logo {
-  position: absolute;
-  width: 275px; /* Increase size of logos */
+  width: 275px;
   height: auto;
-  filter: drop-shadow(
-    0 0 10px rgba(255, 255, 255, 0.8)
-  ); /* Light drop shadow */
+  margin: 0 20px; /* Space between logos */
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
 }
 
+/* Positioning logos with flexbox to prevent overlap */
 .logo:nth-child(1) {
-  bottom: 20px; /* Position logo 1 at the top */
-  left: 20%; /* Position logo 1 from the left */
-  width: 300px;
+  order: 1;
 }
 
 .logo:nth-child(2) {
-  top: 20px; /* Position logo 2 lower */
-  left: 50%; /* Center logo 2 */
-  transform: translateX(-50%); /* Center logo 2 */
+  order: 2;
 }
 
 .logo:nth-child(3) {
-  bottom: 20px; /* Position logo 3 at the bottom */
-  right: 15%; /* Position logo 3 from the right */
+  order: 3;
 }
