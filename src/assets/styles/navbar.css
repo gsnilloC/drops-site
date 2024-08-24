@@ -1,10 +1,9 @@
-/* src/assets/navbar.css */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #0a0a23; /* A different background color */
+  background-color: #0a0a23;
   color: white;
   padding: 0.8rem 1rem;
   display: flex;
@@ -27,7 +26,7 @@
 }
 
 .contact-button {
-  background-color: #f4a261; /* Button background color */
+  background-color: #f4a261;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -37,5 +36,5 @@
 }
 
 .contact-button:hover {
-  background-color: #e76f51; /* Button hover color */
+  background-color: #e76f51;
 }

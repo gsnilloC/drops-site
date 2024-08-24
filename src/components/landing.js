@@ -11,8 +11,7 @@ const Landing = () => {
   const [showSmsInstructions, setShowSmsInstructions] = useState(true);
 
   return (
-    <div>
-      {/* Separate div for typewriter and toggles */}
+    <div className="landing-container">
       <div className="header-container">
         <div className="typewriter-container">
           <Typewriter
@@ -21,16 +20,15 @@ const Landing = () => {
                 "Keep track of when the prices drop for the sneakers you want to cop",
               ],
               autoStart: true,
-              loop: false, // Disable looping so the text appears once and stays
-              delay: 30, // Faster typing speed
-              deleteSpeed: Infinity, // Set to Infinity to prevent deletion
-              cursor: "|", // Show cursor
+              loop: false,
+              delay: 30,
+              deleteSpeed: Infinity,
+              cursor: "|",
             }}
           />
         </div>
       </div>
 
-      {/* Separate div for logos */}
       <div className="logo-container">
         <img src={logo1} alt="FlightClub" className="logo" />
         <img src={logo2} alt="Goat" className="logo" />

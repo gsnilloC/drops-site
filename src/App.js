@@ -1,5 +1,3 @@
-// src/App.js
-
 import React from "react";
 import "./assets/styles/App.css";
 import Landing from "./components/landing.js";
