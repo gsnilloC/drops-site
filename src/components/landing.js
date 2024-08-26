@@ -29,6 +29,10 @@ const Landing = () => {
         </div>
       </div>
 
+      <div className="powered-by-container">
+        <p>Track prices from the most popular sites </p>
+      </div>
+
       <div className="logo-container">
         <img src={logo1} alt="FlightClub" className="logo" />
         <img src={logo2} alt="Goat" className="logo" />
