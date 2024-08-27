@@ -1,10 +1,9 @@
-/* src/assets/navbar.css */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #0a0a23; /* A different background color */
+  background-color: transparent;
   color: white;
   padding: 0.8rem 1rem;
   display: flex;
@@ -27,7 +26,7 @@
 }
 
 .contact-button {
-  background-color: #f4a261; /* Button background color */
+  background-color: #f4a261;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -37,5 +36,32 @@
 }
 
 .contact-button:hover {
-  background-color: #e76f51; /* Button hover color */
+  background-color: #e76f51;
+}
+
+.navbar-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.navbar-right {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.contact-button {
+  background-color: #f4a261;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #e76f51;
 }

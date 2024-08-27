@@ -1,33 +1,78 @@
-.centered-paragraph {
+.landing-container {
+  padding-top: 250px;
+}
+
+.header-container {
   text-align: center;
-  color: #ffffff; /* White text */
-  font-size: 36px; /* Larger font size */
-  font-weight: bold; /* Make text bold */
-  margin: 0 auto 20px auto; /* Center horizontally and add space below */
-  max-width: 70%; /* Restrict the width to 80% of the parent container */
-  line-height: 1.2; /* Improve readability */
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  padding: 0 5%;
+  max-width: 100%;
+}
+
+.typewriter-container {
+  color: #ffffff;
+  font-size: 2.5vw;
+  font-weight: bold;
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.2;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Typewriter__cursor {
+  display: inline;
+  font-size: 2.5vw;
+  line-height: 1.2;
+}
+
+/* New phone image styling */
+.phone-container {
+  overflow: hidden; /* Ensure overflow is hidden to cut off the bottom */
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.phone {
+  width: 100%; /* Ensure the phone image fits the container */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  transform: translateY(33%); /* Move the image up to hide the bottom third */
 }
 
 .toggle-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 0 5%;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
 
 .toggle-option {
-  padding: 10px 20px;
+  padding: 5px 10px;
   cursor: pointer;
-  background-color: #4b0082; /* Default indigo background */
-  color: white; /* White text */
-  border: 1px solid #4b0082; /* Border matching the background */
+  background-color: #4b0082;
+  color: white;
+  border: 1px solid #4b0082;
   border-radius: 5px 5px 0 0;
-  font-size: 18px;
+  font-size: 2vw;
   transition: background-color 0.3s, color 0.3s;
+  flex: 1;
+  text-align: center;
 }
 
 .toggle-option.active {
-  background-color: #61dafb; /* Lighter blue when active */
-  color: #4b0082; /* Indigo text when active */
+  background-color: #61dafb;
+  color: #4b0082;
 }
 
 .toggle-option:first-child {
@@ -42,38 +87,27 @@
   border-right: none;
 }
 
-/* src/assets/styles/landing.css */
 .logo-container {
-  position: relative;
-  width: 100%;
-  height: 250px; /* Adjust height to accommodate different logo positions */
-  margin-top: 20px; /* Adjust as needed */
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  flex-wrap: wrap;
+  padding: 0 5%;
 }
 
 .logo {
-  position: absolute;
-  width: 275px; /* Increase size of logos */
+  width: 15vw;
   height: auto;
-  filter: drop-shadow(
-    0 0 10px rgba(255, 255, 255, 0.8)
-  ); /* Light drop shadow */
+  margin: 10px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+  position: relative;
 }
 
-.logo:nth-child(1) {
-  bottom: 20px; /* Position logo 1 at the top */
-  left: 20%; /* Position logo 1 from the left */
-  width: 300px;
-}
-
-.logo:nth-child(2) {
-  top: 20px; /* Position logo 2 lower */
-  left: 50%; /* Center logo 2 */
-  transform: translateX(-50%); /* Center logo 2 */
-}
-
-.logo:nth-child(3) {
-  bottom: 20px; /* Position logo 3 at the bottom */
-  right: 15%; /* Position logo 3 from the right */
+.powered-by-container {
+  text-align: center;
+  margin-top: 160px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
