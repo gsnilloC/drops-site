@@ -1,5 +1,5 @@
 .landing-container {
-  padding-top: 100px;
+  padding-top: 250px;
 }
 
 .header-container {
@@ -28,6 +28,23 @@
   display: inline;
   font-size: 2.5vw;
   line-height: 1.2;
+}
+
+/* New phone image styling */
+.phone-container {
+  overflow: hidden; /* Ensure overflow is hidden to cut off the bottom */
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.phone {
+  width: 100%; /* Ensure the phone image fits the container */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  transform: translateY(33%); /* Move the image up to hide the bottom third */
 }
 
 .toggle-container {

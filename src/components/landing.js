@@ -6,6 +6,7 @@ import "../assets/styles/landing.css";
 import logo1 from "../assets/images/flightclub_logo.png";
 import logo2 from "../assets/images/goat_logo.png";
 import logo3 from "../assets/images/stockx_logo.png";
+import phone from "../assets/images/sample_.imessage.png";
 
 const Landing = () => {
   const [showSmsInstructions, setShowSmsInstructions] = useState(true);
@@ -13,6 +14,14 @@ const Landing = () => {
   return (
     <div className="landing-container">
       <div className="header-container">
+        {/* Add the phone image here */}
+        <div className="phone-container">
+          <img
+            src={phone}
+            alt="Phone showing notifications"
+            className="phone"
+          />
+        </div>
         <div className="typewriter-container">
           <Typewriter
             options={{
