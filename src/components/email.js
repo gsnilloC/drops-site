@@ -13,7 +13,14 @@ const EmailInstructions = () => {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        padding: "20px",
+        maxWidth: "3000px",
+        margin: "0 auto",
+        textAlign: "center",
+      }}
+    >
       <h2>Email Instructions</h2>
       <p>
         Here are the instructions on how to use the SMS feature... You can opt

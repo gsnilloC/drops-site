@@ -61,6 +61,7 @@ const Landing = () => {
           sx={{
             "& .MuiTab-root": {
               color: "white", // Text color for tabs
+              fontSize: "1.2rem",
             },
             "& .MuiTabs-indicator": {
               backgroundColor: "#61dafb", // Color of the indicator
