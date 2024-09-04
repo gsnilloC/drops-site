@@ -1,5 +1,9 @@
 .landing-container {
-  padding-top: 250px;
+  width: 100%;
+  padding-top: 350px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -7,16 +11,17 @@
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
-  padding: 0 5%;
+  padding: 0 3%;
   max-width: 100%;
 }
 
 .typewriter-container {
   color: #ffffff;
-  font-size: 2.5vw;
+  font-size: 2rem;
   font-weight: bold;
-  width: 85%;
-  margin: 0 auto;
+  width: 140%;
+  max-width: 2000px;
+  margin: 30px auto 0 auto;
   line-height: 1.2;
   height: auto;
   position: absolute;
@@ -24,90 +29,69 @@
   transform: translateX(-50%);
 }
 
-.Typewriter__cursor {
-  display: inline;
-  font-size: 2.5vw;
-  line-height: 1.2;
-}
-
-/* New phone image styling */
 .phone-container {
-  overflow: hidden; /* Ensure overflow is hidden to cut off the bottom */
-  width: 50%;
-  margin: 0 auto;
+  overflow: hidden;
+  width: 40%;
+  margin: 0 auto 0px auto;
   display: block;
-  margin-bottom: 20px;
 }
 
 .phone {
-  width: 100%; /* Ensure the phone image fits the container */
+  width: 100%;
   height: auto;
   margin: 0 auto;
   display: block;
-  transform: translateY(33%); /* Move the image up to hide the bottom third */
+  transform: translateY(20%);
 }
 
 .toggle-container {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
-  padding: 0 5%;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
-}
-
-.toggle-option {
-  padding: 5px 10px;
-  cursor: pointer;
-  background-color: #4b0082;
-  color: white;
-  border: 1px solid #4b0082;
-  border-radius: 5px 5px 0 0;
-  font-size: 2vw;
-  transition: background-color 0.3s, color 0.3s;
-  flex: 1;
-  text-align: center;
-}
-
-.toggle-option.active {
-  background-color: #61dafb;
-  color: #4b0082;
-}
-
-.toggle-option:first-child {
-  border-radius: 5px 0 0 5px;
-}
-
-.toggle-option:last-child {
-  border-radius: 0 5px 5px 0;
-}
-
-.toggle-option:not(:last-child) {
-  border-right: none;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 0;
   flex-wrap: wrap;
-  padding: 0 5%;
+  padding: 20px 5%;
+  position: relative;
+  width: 100%;
+  height: 200px;
 }
 
 .logo {
   width: 15vw;
   height: auto;
   margin: 10px;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-  position: relative;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+  position: absolute;
+}
+
+.logo:nth-child(1) {
+  left: 0%;
+  top: 20%;
+}
+
+.logo:nth-child(2) {
+  left: 30%;
+  top: 30%;
+}
+
+.logo:nth-child(3) {
+  left: 65%;
+  top: 10%;
 }
 
 .powered-by-container {
   text-align: center;
-  margin-top: 160px;
-  font-size: 1.2rem;
+  margin-top: 150px;
+  font-size: 1rem;
   font-weight: bold;
+}
+
+.instructions-wrapper {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 0px;
 }
