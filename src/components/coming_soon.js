@@ -5,18 +5,18 @@ const ComingSoonBadge = () => {
     <div
       style={{
         position: "absolute",
-        top: "125px", // Adjust the position as needed
-        left: "300px", // Adjust the position as needed
+        top: "125px",
+        left: "300px",
         backgroundColor: "#ff6b6b",
         color: "white",
         borderRadius: "12px",
         padding: "20px 80px",
         fontSize: "4rem",
         fontWeight: "bold",
-        zIndex: 9999, // Ensures the badge is on top of other elements
-        transform: "rotate(-10deg)", // Rotate the badge to make it diagonal
-        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Adds shadow for emphasis
-        transformOrigin: "center center", // Ensures rotation is centered
+        zIndex: 9999,
+        transform: "rotate(-10deg)",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+        transformOrigin: "center center",
       }}
     >
       Coming Soon

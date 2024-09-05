@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
 import SmsInstructions from "./sms";
 import EmailInstructions from "./email";
-import ComingSoonBadge from "./coming_soon"; // Import the badge component
+import ComingSoonBadge from "./coming_soon";
 import "../assets/styles/landing.css";
 import logo1 from "../assets/images/flightclub_logo.png";
 import logo2 from "../assets/images/goat_logo.png";
@@ -68,17 +68,17 @@ const Landing = () => {
           centered
           sx={{
             "& .MuiTab-root": {
-              color: "white", // Text color
-              fontSize: "1.1rem", // Slightly smaller font size
-              minWidth: "480px", // Make the tabs longer
-              padding: "6px 12px", // Thinner padding for slimmer tabs
-              backgroundColor: "#6a0dad", // Lighter purple color for the tab background
-              borderRadius: "12px", // Rounded corners
-              margin: "0 10px", // Adds spacing between tabs
-              transition: "background-color 0.3s", // Smooth transition for hover/acti
+              color: "white",
+              fontSize: "1.1rem",
+              minWidth: "480px",
+              padding: "6px 12px",
+              backgroundColor: "#6a0dad",
+              borderRadius: "12px",
+              margin: "0 10px",
+              transition: "background-color 0.3s",
             },
             "& .MuiTabs-indicator": {
-              backgroundColor: "#fff", // Color of the indicator (underline)
+              backgroundColor: "#fff",
             },
           }}
         >
@@ -86,7 +86,6 @@ const Landing = () => {
           <Tab label="Email" />
         </Tabs>
         {value === 0 && <ComingSoonBadge />}{" "}
-        {/* Display the badge when SMS tab is active */}
         <div className="instructions-wrapper">
           {value === 0 ? <SmsInstructions /> : <EmailInstructions />}
         </div>
